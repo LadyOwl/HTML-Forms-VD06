@@ -8,13 +8,13 @@ users = []
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        # Получаем данные из формы
+
         name = request.form.get('name')
         age = request.form.get('age')
         city = request.form.get('city')
         hobby = request.form.get('hobby')
 
-        # Добавляем нового пользователя в список
+
         users.append({
             'name': name,
             'age': age,
